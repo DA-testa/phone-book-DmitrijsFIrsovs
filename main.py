@@ -28,8 +28,8 @@ def process_queries(queries):
                 del contacts[cur_query.number]     
         else:
             response = 'not found'
-                if cur_query.number in contacts:
-                    response = contacts[cur_query.number]
+            if cur_query.number in contacts:
+                response = contacts[cur_query.number]
             result.append(response)
     return result
 
